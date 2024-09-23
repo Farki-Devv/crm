@@ -9,6 +9,7 @@ import Vacations from './pages/vacations'
 import Employees from './pages/employees'
 import Messenger from './pages/messenger'
 import InfoPortal from './pages/info-portal'
+import Registration from './shared/registration'
 const router = createBrowserRouter([
 	{
 		path: '/',
@@ -46,5 +47,8 @@ const router = createBrowserRouter([
 	},
 ])
 createRoot(document.getElementById('root')!).render(
-	<RouterProvider router={router} />
+	<>
+		<RouterProvider router={router} />
+		<Registration/>
+	</>
 )
